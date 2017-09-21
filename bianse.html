@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<style>
+			body{
+				background:rgba(0,0,0,.1);
+			}
+			.container{
+				background:#BBADA0;
+				position:absolute;
+				left:50%;
+				top:50%;
+				border-radius:10px;
+				padding-right:10px;
+				padding-bottom:10px;
+				box-sizing:border-box;
+			}
+			.title{
+				text-align:center;
+				font:34px Arial;
+				color:#005aa0;
+			}
+			.fix{
+				background:#ccc0b3;
+				width:100px;
+				height:100px;
+				float:left;
+				margin-left:10px;
+				margin-top:10px;
+				border-radius:6px;
+				z-index:10;
+			}
+			.level,.score,.time,.rule{
+				position:absolute;
+				font:34px Arial;
+				color:#005aa0;
+				font-weight:bold;
+				top:280px;
+				left:240px;
+			}
+			.score{
+				top:340px;
+			}
+			.time{
+				top:220px;
+			}
+			.over{
+				position:absolute;
+				width:100%;
+				height:100%;
+				z-index:100;
+				background:rgba(0,0,0,.5);
+				display:none;
+			}
+			.box{
+				position:absolute;
+				width:350px;
+				height:280px;
+				background:#ddd;
+				border-radius:10px;
+				left:50%;
+				top:50%;
+				margin-left:-175px;
+				margin-top:-160px;
+				font:30px "microsoft yahei";
+				text-align:center;
+				padding-top:40px;
+				box-sizing:border-box;
+			}
+			.box p{
+				font-size:24px;
+			}
+			button{
+				display:block;
+				outline:0;
+				border-radius:6px;
+				border:0;
+				background:#e4393c;
+				width:100px;
+				height:40px;
+				color:#fff;
+				font:20px "microsoft yahei";
+				position:absolute;
+				bottom:50px;
+				margin-left:125px;
+				cursor:pointer;
+			}
+			.rule{
+				font-size:28px;
+				width:200px;
+				top:400px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="over">
+			<div class="box">
+				今天你瞎了么？
+				<p>您的最终得分：<span></span></p>
+				<button>重新开始</button>
+			</div>
+		</div>
+		<p class="title">Identify The Similar Color</p>
+		<p class="level">LEVEL：0</p>
+		<p class="score">SCORE：0</p>
+		<p class="time">TIME：30</p>
+		<p class="rule">游戏规则：最终得分设置为每关剩余时间数的累积</p>
+		<script src="bianse.js"></script>
+	</body>
+</html>
